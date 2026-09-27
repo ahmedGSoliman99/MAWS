@@ -1,0 +1,16 @@
+name: maws
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - openmm
+  - ambertools
+  - numpy
+  - mpmath
+  - numba
+  - matplotlib
+  - lxml
+  - scikit-learn
+  - pytest
+  - pyyaml
+
