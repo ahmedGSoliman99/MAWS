@@ -1,0 +1,29 @@
+Repository preparation environment report
+=========================================
+
+Date: 2026-09-24
+
+Local checks performed during repository preparation:
+
+- PDB residue sequence extraction: passed for examples/LEAK/LEAK.pdb; sequence MDAKDKLKEKAKE.
+- Default local python on the packaging machine: Python 2.7.11 from MGLTools.
+- OpenMM in default local python: not available.
+- PyYAML in default local python: not available.
+- tleap: not found on PATH.
+
+Therefore the conda environment and full MAWS execution were not independently reconstructed on this local machine.
+
+The historical/reference successful run preserved in validation/validation_log.txt reported:
+
+- Job: LEAK_test_DNA
+- Input file: LEAK.pdb
+- First step samples: 5000
+- Further step samples: 5000
+- Number of further steps: 25
+- beta: 0.01
+- Final sequence: DCN DTN DTN DCN DTN DGN DGN DTN DTN DCN DTN DTN DGN DCN DTN DTN DGN DTN DCN DTN DGN DCN DCN DTN DCN DCN
+
+Converted from MAWS DNA residue aliases, that sequence is:
+
+CTTCTGGTTCTTGCTTGTCTGCCTCC
+
