@@ -381,7 +381,7 @@ class Structure(object):
 ## Represents a complex containing multiple molecule chains.
 class Complex(object):
     
-    ## Specifies a complex by giving a force field governing it, defaulting to "leaprc.ff12SB"
+    ## Specifies a complex by giving a force field governing it, defaulting to "leaprc.protein.ff14SB"
     # @param force_field Specifies the force field governing the complex. 
     def __init__(self, force_field="oldff/leaprc.ff99"):
         self.build_string = """

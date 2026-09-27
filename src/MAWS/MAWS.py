@@ -100,6 +100,9 @@ output.write("Start time: {0}\n".format(str(datetime.now())))
 if APTAMER_TYPE == 'RNA':
     #Build Structure-object for RNA residues
     RNA = XMLStructure("RNA.xml")
+    
+    # Set the is_rna flag so LEaP knows to use R-prefixed residue names
+    RNA.is_rna = True
 
     #Instantiate the Complex for further computation
     cpx = Complex("leaprc.ff14SB")
@@ -112,12 +115,15 @@ if APTAMER_TYPE == 'RNA':
 else:
     #structure for DNA
     DNA = XMLStructure("DNA.xml")
+    
+    # Set the is_dna flag so LEaP knows to load DNA force field
+    DNA.is_dna = True
 
     #Instantiate the Complex for further computation
     cpx = Complex("leaprc.ff14SB")
 
     #chain
-    cpx.add_chain("G C A T", DNA)
+    cpx.add_chain("", DNA)
 
     nucleotides = ["DGN", "DAN", "DTN", "DCN"]
 
