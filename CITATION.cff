@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this restored MAWS workflow, please cite this software repository and the original MAWS sources described in NOTICE.md."
+title: "MAWS: Restored and Reproducible Workflow for De Novo DNA Aptamer Design"
+version: "1.0.0"
+date-released: "2026-09-24"
+repository-code: "https://github.com/ahmedGSoliman99/MAWS"
+authors:
+  - family-names: "Ahmed"
+    given-names: "Ahmed Gamal Soliman"
+license: "MIT"
+
